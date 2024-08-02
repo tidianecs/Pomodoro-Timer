@@ -1,0 +1,121 @@
+/*Initialisation de base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #243B55;
+}
+
+/*Stylisation de la navbar*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    width: 100%;
+}
+.logo{
+    color: antiquewhite;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+/*Animation de la partie droite de la navbar*/
+.navbar a::before{
+    background-color: antiquewhite;
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+/*Stylisation du menu pomodoro*/
+.pomodoro{
+    text-align: center;
+    margin-top: 100px;
+}
+.pomodoro div{
+    margin: 50px;
+}
+.title{
+    color: antiquewhite;
+    font-size: 22px;
+}
+#timer{
+    color: antiquewhite;
+    font-size: 48px;
+}
+.allButtons button{
+    margin-left: 15px;
+}
+/*Stylisation et animation des buttons*/
+#start{
+    background-color: green;
+    border: green solid 10px;
+    border-radius: 5px;
+}
+#start a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 5px;
+}
+#start:hover{
+    background-color: antiquewhite;
+    border: antiquewhite solid 10px;
+    transition: 0.5s;
+}
+#start a:hover{
+    color: green;
+}
+#stop{
+    background-color: red;
+    border: red solid 10px;
+    border-radius: 5px;
+}
+#stop a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 5px;
+}
+#stop:hover{
+    background-color: antiquewhite;
+    border: antiquewhite solid 10px;
+    transition: 0.5s;
+}
+#stop a:hover{
+    color: red;
+}
+#reset{
+    background-color: gray;
+    border: gray solid 10px;
+    border-radius: 5px;
+}
+#reset a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 5px;
+}
+#reset:hover{
+    background-color: antiquewhite;
+    border: antiquewhite solid 10px;
+    transition: 0.5s;
+}
+#reset a:hover{
+    color: gray;
+}
